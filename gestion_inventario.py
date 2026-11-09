@@ -121,7 +121,7 @@ def main():
     print("\n4. Registro de incidencias por almacén...")
     incidencias_norte_lst = fn_RegistrarIncidencia_lst("Palé dañado")
     incidencias_sur_lst = fn_RegistrarIncidencia_lst("Etiqueta ilegible")
-    incidencias_norte_lst = fn_RegistrarIncidencia_lst("Retraso del transportista", incidencias_norte_lst)
+    incidencias_norte_lst = fn_RegistrarIncidencia_lst("Retraso del transportista", incidencias_norte_lst) # Tercer error identificado (no he sabido corregirlo)
     print(f"   Incidencias almacén norte: {len(incidencias_norte_lst)}")
     print(f"   Incidencias almacén sur: {len(incidencias_sur_lst)}")
 
