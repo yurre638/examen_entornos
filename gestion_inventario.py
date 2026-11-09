@@ -15,7 +15,7 @@ def fn_EliminarAgotados_lst(productos_lst):
     """
     for producto_dic in productos_lst:
         if producto_dic["stock"] == 0:
-            productos_lst.remove(producto_dic)
+            productos_lst.remove(producto_dic) #
 
     return productos_lst
 
@@ -30,7 +30,7 @@ def fn_ValorPorCategoria_dic(productos_lst):
     for producto_dic in productos_lst:
         categoria_str = producto_dic["categoria"]
         precio_fl = producto_dic["precio"]
-        unidades_int = producto_dic["minimo"]
+        unidades_int = producto_dic["stock"]  #primera correccion: sustituyo minimos por stock
         valor_fl = precio_fl * unidades_int
 
         valores_dic[categoria_str] = valores_dic.get(categoria_str, 0) + valor_fl
