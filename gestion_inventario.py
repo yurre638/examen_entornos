@@ -15,7 +15,7 @@ def fn_EliminarAgotados_lst(productos_lst):
     """
     for producto_dic in productos_lst:
         if producto_dic["stock"] == 0:
-            productos_lst.remove(producto_dic) #
+            productos_lst.remove(producto_dic) #cuarto error
 
     return productos_lst
 
